@@ -1,12 +1,16 @@
 ﻿using System;
+using System.Collections.Generic;
 
-namespace multi_thread
+namespace multithread
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Starting app...");
+            Plugin p = new Plugin();
+            p.StartListening();
+            
         }
     }
 }
